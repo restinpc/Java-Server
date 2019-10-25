@@ -31,6 +31,6 @@ Socket based server with support of indexing files from environment.
 ## Stress Testing
 
 CentOS 7.6.1810, 1x2.2Hz, 1gb RAM 
-> Testing result is `250` Transactions Per Second with `3%` of Errors and `50 ms.` average Delay.
+> Testing result is `550` Transactions Per Second with `2%` of Errors and `50 ms.` average Delay.
 > 
 
