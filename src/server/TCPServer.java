@@ -61,14 +61,22 @@ public class TCPServer {
                         if(command.equals("") || command.equals("/")) {
                             command = "index.html";
                         }
-                        this.out.println("HTTP/1.1 200 OK");
+                        byte[] data = this.frontend.fout("/"+command);
+                        String fout;
+                        if(data != null) {
+                            this.out.println("HTTP/1.1 200 OK");
+                            fout = new String(data);
+                        }else{
+                            this.out.println("HTTP/1.1 400 Page not found");
+                            fout = "Page not found";
+                        }
                         this.out.println("Content-Type: "+this.frontend.getMimeType(command)+"; charset=utf-8");
                         this.out.println("Access-Control-Allow-Origin: *");
                         this.out.println("Access-Control-Allow-Headers: *");
                         this.out.println("Access-Control-Allow-Methods: *");
                         this.out.println("Access-Control-Request-Headers: *, x-requested-with *");
                         this.out.println("");
-                        this.out.println(new String(this.frontend.fout("/"+command)));
+                        this.out.println(fout);
                         this.out.close();
                     }
                 }

@@ -38,8 +38,7 @@ public class Frontend {
         if(this.files.containsKey(request)){
             return this.files.get(request);
         }else{
-            String fout = "404 / Page not found";
-            return fout.getBytes();
+            return null;
         }
     }
     //------------------------------------------------------------------------------------------------------------------
