@@ -16,12 +16,12 @@ Socket based server with support of indexing files from environment.
 - Install IntelliJI IDEA
 - Open project repository in this IDE
 - Configure Maven and other dependencies
-- Open `File -> Project Structure -> Artifacts -> Add -> Jar -> From Modules` artifact
-- Build a project
+- Add `File -> Project Structure -> Artifacts -> Add -> Jar -> From Modules`
+- Build a project via IDE tools or console
 
 ## Deploying
 
-- Run Build->Build from IntelliJi IDEA
+- Clean and build a project via IDE tools or console
 - Open command line in project root directory
 - Run `cd production && java -jar java-socket.jar`
 - If everything is ok, 2 links will be available 
