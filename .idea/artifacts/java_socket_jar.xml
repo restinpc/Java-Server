@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact build-on-make="true" name="java-socket:jar">
+    <output-path>$PROJECT_DIR$/production</output-path>
+    <root id="root">
+      <element id="archive" name="java-socket.jar">
+        <element id="module-output" name="java-socket-server" />
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/manifest.mf" output-file-name="MANIFEST.MF" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
