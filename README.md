@@ -29,10 +29,8 @@ Socket based server with support of indexing files from environment.
 - `http://localhost:4000` and `http://localhost:4000/ping`
 
 
-## Load Test
+## [Load Test](http://loadest.io)
 
 CentOS 7.6.1810, 1x2.2Hz, 0.5gb RAM  
-  
+
 ![Load test](https://raw.githubusercontent.com/restinpc/Java-Server/master/loadest.png)
-
-
