@@ -31,7 +31,7 @@ Socket based server with support of indexing files from environment.
 
 ## Load Test
 
-CentOS 7.6.1810, 1x2.2Hz, 1gb RAM  
+CentOS 7.6.1810, 1x2.2Hz, 0.5gb RAM  
   
 ![Load test](https://raw.githubusercontent.com/restinpc/Java-Server/master/loadest.png)
 
