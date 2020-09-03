@@ -11,7 +11,7 @@ Socket based server with support of indexing files from environment.
 - Run `cd production && java -jar java-socket.jar`
 
 
-## Building
+## Build
 
 - Install IntelliJI IDEA
 - Open project repository in this IDE
@@ -19,7 +19,8 @@ Socket based server with support of indexing files from environment.
 - Add `File -> Project Structure -> Artifacts -> Add -> Jar -> From Modules`
 - Build a project via IDE tools or console
 
-## Deploying
+
+## Deploy
 
 - Clean and build a project via IDE tools or console
 - Open command line in project root directory
@@ -28,9 +29,10 @@ Socket based server with support of indexing files from environment.
 - `http://localhost:4000` and `http://localhost:4000/ping`
 
 
-## Stress Testing
+## Load Test
 
 CentOS 7.6.1810, 1x2.2Hz, 1gb RAM  
+  
 ![Load test](https://raw.githubusercontent.com/restinpc/Java-Server/master/loadest.png)
 
 
